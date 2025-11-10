@@ -50,119 +50,119 @@ rule-providers:
     interval: 86400
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/reject.yaml"
-    path: "./ruleset/loyalsoldier/reject.yaml"
+    path: "./ruleset/reject.yaml"
   microsoft:
     type: http
     format: yaml
     interval: 86400
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/microsoft.yaml"
-    path: "./ruleset/loyalsoldier/microsoft.yaml"
+    path: "./ruleset/microsoft.yaml"
   apple:
     type: http
     format: yaml
     interval: 86400
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/apple.yaml"
-    path: "./ruleset/loyalsoldier/apple.yaml"
+    path: "./ruleset/apple.yaml"
   google:
     type: http
     format: yaml
     interval: 86400
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/google.yaml"
-    path: "./ruleset/loyalsoldier/google.yaml"
+    path: "./ruleset/google.yaml"
   proxy:
     type: http
     format: yaml
     interval: 86400
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/proxy.yaml"
-    path: "./ruleset/loyalsoldier/proxy.yaml"
+    path: "./ruleset/proxy.yaml"
   direct:
     type: http
     format: yaml
     interval: 86400
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/direct.yaml"
-    path: "./ruleset/loyalsoldier/direct.yaml"
+    path: "./ruleset/direct.yaml"
   private:
     type: http
     format: yaml
     interval: 86400
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/private.yaml"
-    path: "./ruleset/loyalsoldier/private.yaml"
+    path: "./ruleset/private.yaml"
   gfw:
     type: http
     format: yaml
     interval: 86400
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/gfw.yaml"
-    path: "./ruleset/loyalsoldier/gfw.yaml"
+    path: "./ruleset/gfw.yaml"
   tld-not-cn:
     type: http
     format: yaml
     interval: 86400
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/tld-not-cn.yaml"
-    path: "./ruleset/loyalsoldier/tld-not-cn.yaml"
+    path: "./ruleset/tld-not-cn.yaml"
   telegramcidr:
     type: http
     format: yaml
     interval: 86400
     behavior: ipcidr
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/telegramcidr.yaml"
-    path: "./ruleset/loyalsoldier/telegramcidr.yaml"
+    path: "./ruleset/telegramcidr.yaml"
   cncidr:
     type: http
     format: yaml
     interval: 86400
     behavior: ipcidr
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/cncidr.yaml"
-    path: "./ruleset/loyalsoldier/cncidr.yaml"
+    path: "./ruleset/cncidr.yaml"
   lancidr:
     type: http
     format: yaml
     interval: 86400
     behavior: ipcidr
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/lancidr.yaml"
-    path: "./ruleset/loyalsoldier/lancidr.yaml"
+    path: "./ruleset/lancidr.yaml"
   applications:
     type: http
     format: yaml
     interval: 86400
     behavior: classical
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/applications.yaml"
-    path: "./ruleset/loyalsoldier/applications.yaml"
+    path: "./ruleset/applications.yaml"
   bahamut:
     type: http
     format: yaml
     interval: 86400
     behavior: classical
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/rule/Bahamut.yaml"
-    path: "./ruleset/xiaolin-007/bahamut.yaml"
+    path: "./ruleset/bahamut.yaml"
   YouTube:
     type: http
     format: yaml
     interval: 86400
     behavior: classical
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/rule/YouTube.yaml"
-    path: "./ruleset/xiaolin-007/YouTube.yaml"
+    path: "./ruleset/YouTube.yaml"
   Netflix:
     type: http
     format: yaml
     interval: 86400
     behavior: classical
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/rule/Netflix.yaml"
-    path: "./ruleset/xiaolin-007/Netflix.yaml"
+    path: "./ruleset/Netflix.yaml"
   Spotify:
     type: http
     format: yaml
     interval: 86400
     behavior: classical
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/rule/Spotify.yaml"
-    path: "./ruleset/xiaolin-007/Spotify.yaml"
+    path: "./ruleset/Spotify.yaml"
 
 # 代理组 (来自 tun.txt 中的 proxy-groups)
 proxy-groups:

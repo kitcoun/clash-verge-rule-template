@@ -1,5 +1,6 @@
 payload:
   - DOMAIN-SUFFIX,windows.com          # Windows相关服务
+  - DOMAIN-SUFFIX,microsoft.com        # 微软官网及相关服务
   - DOMAIN-SUFFIX,microsoftonline.com  # Office 365，Azure等
   - DOMAIN-SUFFIX,microsoftstore.com   # 微软商店
   - DOMAIN-SUFFIX,live.net             # Live账号

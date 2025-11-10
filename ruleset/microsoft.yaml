@@ -1,40 +1,40 @@
 payload:
   - USER-AGENT,*microsoft*
   - USER-AGENT,微软*
-  - DOMAIN-SUFFIX,windows.com          # Windows相关服务
-  - DOMAIN-SUFFIX,microsoft.com        # 微软官网及相关服务
-  - DOMAIN-SUFFIX,microsoftonline.com  # Office 365，Azure等
-  - DOMAIN-SUFFIX,microsoftstore.com   # 微软商店
-  - DOMAIN-SUFFIX,live.net             # Live账号
-  - DOMAIN-SUFFIX,office365.com        # Office 365
-  - DOMAIN-SUFFIX,teams.microsoft.com  # Microsoft Teams
-  - DOMAIN-SUFFIX,outlook.com         # Outlook邮件服务
-  - DOMAIN-SUFFIX,hotmail.com         # Hotmail邮箱
-  - DOMAIN-SUFFIX,sharepoint.com       # SharePoint
-  - DOMAIN-SUFFIX,msn.com             # MSN服务
-  - DOMAIN-SUFFIX,skype.com           # Skype服务
-  - DOMAIN-SUFFIX,azure.com           # Azure
-  - DOMAIN-SUFFIX,visualstudio.com    # Visual Studio
-  - DOMAIN-SUFFIX,live.com            # Live
-  - DOMAIN-SUFFIX,onecare.com         # OneCare
-  - DOMAIN-SUFFIX,onedrive.live.com   # OneDrive
-  - DOMAIN-SUFFIX,office.com          # Office服务
-  - DOMAIN-SUFFIX,windowsupdate.microsoft.com # Windows更新服务
-  - DOMAIN-SUFFIX,updates.microsoft.com    # Windows更新服务器
-  - DOMAIN-SUFFIX,msocdn.com          # Office CDN
-  - DOMAIN-SUFFIX,cloudapp.net        # Azure Cloud Services
-  - DOMAIN-SUFFIX,visualstudio.microsoft.com # Visual Studio网站
-  - DOMAIN-SUFFIX,msdn.microsoft.com  # MSDN
-  - DOMAIN-SUFFIX,defender.com        # Microsoft Defender
-  - DOMAIN-SUFFIX,msn.com             # MSN服务
-  - DOMAIN-SUFFIX,bing.com            # Bing搜索引擎
-  - DOMAIN-SUFFIX,advertising.microsoft.com # Microsoft广告服务
-  - DOMAIN-SUFFIX,akamaihd.net        # Akamai CDN（微软部分服务使用）
-  - DOMAIN-SUFFIX,trafficmanager.net  # Azure流量管理
-  - DOMAIN-SUFFIX,windows.net         # Windows Azure
-  - DOMAIN-SUFFIX,msedge.net          # Microsoft Edge相关服务
-  - DOMAIN-SUFFIX,officecdn.com       # Office内容分发网络
-  - DOMAIN-SUFFIX,microsofttranslator.com  # 翻译服务
-  - DOMAIN-SUFFIX,translator.microsoft.com  # 翻译服务
-  - DOMAIN-SUFFIX,msedge.net         # Edge 浏览器服务
-  - DOMAIN-SUFFIX,msedge.com         # Edge 浏览器服务
+  - DOMAIN-SUFFIX,windows.com
+  - DOMAIN-SUFFIX,microsoft.com
+  - DOMAIN-SUFFIX,microsoftonline.com
+  - DOMAIN-SUFFIX,microsoftstore.com
+  - DOMAIN-SUFFIX,live.net
+  - DOMAIN-SUFFIX,office365.com
+  - DOMAIN-SUFFIX,teams.microsoft.com
+  - DOMAIN-SUFFIX,outlook.com
+  - DOMAIN-SUFFIX,hotmail.com
+  - DOMAIN-SUFFIX,sharepoint.com
+  - DOMAIN-SUFFIX,msn.com
+  - DOMAIN-SUFFIX,skype.com
+  - DOMAIN-SUFFIX,azure.com
+  - DOMAIN-SUFFIX,visualstudio.com
+  - DOMAIN-SUFFIX,live.com
+  - DOMAIN-SUFFIX,onecare.com
+  - DOMAIN-SUFFIX,onedrive.live.com
+  - DOMAIN-SUFFIX,office.com
+  - DOMAIN-SUFFIX,windowsupdate.microsoft.com
+  - DOMAIN-SUFFIX,updates.microsoft.com
+  - DOMAIN-SUFFIX,msocdn.com
+  - DOMAIN-SUFFIX,cloudapp.net
+  - DOMAIN-SUFFIX,visualstudio.microsoft.com
+  - DOMAIN-SUFFIX,msdn.microsoft.com
+  - DOMAIN-SUFFIX,defender.com
+  - DOMAIN-SUFFIX,msn.com
+  - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,advertising.microsoft.com
+  - DOMAIN-SUFFIX,akamaihd.net
+  - DOMAIN-SUFFIX,trafficmanager.net
+  - DOMAIN-SUFFIX,windows.net
+  - DOMAIN-SUFFIX,msedge.net
+  - DOMAIN-SUFFIX,officecdn.com
+  - DOMAIN-SUFFIX,microsofttranslator.com
+  - DOMAIN-SUFFIX,translator.microsoft.com
+  - DOMAIN-SUFFIX,msedge.net
+  - DOMAIN-SUFFIX,msedge.com

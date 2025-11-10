@@ -213,7 +213,7 @@ proxy-groups:
     url: "https://www.google.com/generate_204"
     lazy: true
     max-failed-times: 3
-    hidden: false
+    hidden: falseicon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/apple.svg"
 
   - name: "漏网之鱼"
     type: "select"

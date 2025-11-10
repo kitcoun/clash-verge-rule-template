@@ -345,7 +345,6 @@ proxy-groups:
 rules:
   - "DOMAIN-SUFFIX,googleapis.cn,节点选择"
   - "DOMAIN-SUFFIX,gstatic.com,节点选择"
-  - "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,节点选择"
   - "DOMAIN-SUFFIX,github.io,节点选择"
   - "DOMAIN,v2rayse.com,节点选择"
   - "RULE-SET,applications,全局直连"

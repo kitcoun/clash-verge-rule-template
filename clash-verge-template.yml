@@ -51,13 +51,13 @@ rule-providers:
     behavior: domain
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/reject.yaml"
     path: "./ruleset/loyalsoldier/reject.yaml"
-  icloud:
+  microsoft:
     type: http
     format: yaml
     interval: 86400
     behavior: domain
-    url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/icloud.yaml"
-    path: "./ruleset/loyalsoldier/icloud.yaml"
+    url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/microsoft.yaml"
+    path: "./ruleset/loyalsoldier/microsoft.yaml"
   apple:
     type: http
     format: yaml
@@ -353,7 +353,7 @@ rules:
   - "RULE-SET,applications,全局直连"
   - "RULE-SET,private,全局直连"
   - "RULE-SET,reject,广告过滤"
-  - "RULE-SET,icloud,微软服务"
+  - "RULE-SET,microsoft,微软服务"
   - "RULE-SET,apple,苹果服务"
   - "RULE-SET,YouTube,YouTube"
   - "RULE-SET,Netflix,Netflix"

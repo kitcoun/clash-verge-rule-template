@@ -182,7 +182,7 @@ proxy-groups:
 
   - name: "谷歌服务"
     type: "select"
-    proxies: ["节点选择", "全局直连"]
+    proxies: ["节点选择", DIRECT]
     # include-all: true
     # interval: 300
     # timeout: 3000

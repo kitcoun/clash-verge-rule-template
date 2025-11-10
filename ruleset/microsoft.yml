@@ -31,3 +31,7 @@ payload:
   - DOMAIN-SUFFIX,windows.net         # Windows Azure
   - DOMAIN-SUFFIX,msedge.net          # Microsoft Edge相关服务
   - DOMAIN-SUFFIX,officecdn.com       # Office内容分发网络
+  - DOMAIN-SUFFIX,microsofttranslator.com  # 翻译服务
+  - DOMAIN-SUFFIX,translator.microsoft.com  # 翻译服务
+  - DOMAIN-SUFFIX,msedge.net         # Edge 浏览器服务
+  - DOMAIN-SUFFIX,msedge.com         # Edge 浏览器服务

@@ -7,6 +7,9 @@ on:
   push:
     branches:
       - main  # 每次推送到 main 分支时更新
+      
+permissions:
+  contents: write 
 
 jobs:
   update-rules:

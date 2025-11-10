@@ -140,7 +140,7 @@ rule-providers:
     format: yaml
     interval: 86400
     behavior: classical
-    url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/Bahamut.yaml"
+    url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/bahamut.yaml"
     path: "./ruleset/bahamut.yaml"
   YouTube:
     type: http

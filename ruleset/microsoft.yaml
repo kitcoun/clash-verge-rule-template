@@ -1,4 +1,6 @@
 payload:
+  - USER-AGENT,*microsoft*
+  - USER-AGENT,微软*
   - DOMAIN-SUFFIX,windows.com          # Windows相关服务
   - DOMAIN-SUFFIX,microsoft.com        # 微软官网及相关服务
   - DOMAIN-SUFFIX,microsoftonline.com  # Office 365，Azure等

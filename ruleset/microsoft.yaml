@@ -1,0 +1,33 @@
+payload:
+  - DOMAIN-SUFFIX,windows.com          # Windows相关服务
+  - DOMAIN-SUFFIX,microsoftonline.com  # Office 365，Azure等
+  - DOMAIN-SUFFIX,microsoftstore.com   # 微软商店
+  - DOMAIN-SUFFIX,live.net             # Live账号
+  - DOMAIN-SUFFIX,office365.com        # Office 365
+  - DOMAIN-SUFFIX,teams.microsoft.com  # Microsoft Teams
+  - DOMAIN-SUFFIX,outlook.com         # Outlook邮件服务
+  - DOMAIN-SUFFIX,hotmail.com         # Hotmail邮箱
+  - DOMAIN-SUFFIX,sharepoint.com       # SharePoint
+  - DOMAIN-SUFFIX,msn.com             # MSN服务
+  - DOMAIN-SUFFIX,skype.com           # Skype服务
+  - DOMAIN-SUFFIX,azure.com           # Azure
+  - DOMAIN-SUFFIX,visualstudio.com    # Visual Studio
+  - DOMAIN-SUFFIX,live.com            # Live
+  - DOMAIN-SUFFIX,onecare.com         # OneCare
+  - DOMAIN-SUFFIX,onedrive.live.com   # OneDrive
+  - DOMAIN-SUFFIX,office.com          # Office服务
+  - DOMAIN-SUFFIX,windowsupdate.microsoft.com # Windows更新服务
+  - DOMAIN-SUFFIX,updates.microsoft.com    # Windows更新服务器
+  - DOMAIN-SUFFIX,msocdn.com          # Office CDN
+  - DOMAIN-SUFFIX,cloudapp.net        # Azure Cloud Services
+  - DOMAIN-SUFFIX,visualstudio.microsoft.com # Visual Studio网站
+  - DOMAIN-SUFFIX,msdn.microsoft.com  # MSDN
+  - DOMAIN-SUFFIX,defender.com        # Microsoft Defender
+  - DOMAIN-SUFFIX,msn.com             # MSN服务
+  - DOMAIN-SUFFIX,bing.com            # Bing搜索引擎
+  - DOMAIN-SUFFIX,advertising.microsoft.com # Microsoft广告服务
+  - DOMAIN-SUFFIX,akamaihd.net        # Akamai CDN（微软部分服务使用）
+  - DOMAIN-SUFFIX,trafficmanager.net  # Azure流量管理
+  - DOMAIN-SUFFIX,windows.net         # Windows Azure
+  - DOMAIN-SUFFIX,msedge.net          # Microsoft Edge相关服务
+  - DOMAIN-SUFFIX,officecdn.com       # Office内容分发网络

@@ -1,0 +1,49 @@
+name: Update Clash Rules
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天更新一次，UTC时间午夜
+  push:
+    branches:
+      - main  # 每次推送到 main 分支时更新
+
+jobs:
+  update-rules:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v4
+
+    - name: Download Loyalsoldier Clash Rules from GitHub
+      run: |
+        mkdir -p ruleset
+        curl -L "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt" -o ruleset/reject.yaml
+        curl -L "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt" -o ruleset/icloud.yaml
+        curl -L "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt" -o ruleset/apple.yaml
+        curl -L "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt" -o ruleset/google.yaml
+        curl -L "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt" -o ruleset/proxy.yaml
+        curl -L "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt" -o ruleset/direct.yaml
+        curl -L "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt" -o ruleset/private.yaml
+        curl -L "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt" -o ruleset/gfw.yaml
+        curl -L "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt" -o ruleset/tld-not-cn.yaml
+        curl -L "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt" -o ruleset/telegramcidr.yaml
+        curl -L "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt" -o ruleset/cncidr.yaml
+        curl -L "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt" -o ruleset/lancidr.yaml
+        curl -L "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt" -o ruleset/applications.yaml
+
+    - name: Download xiaolin-007 Bahamut and YouTube Rules from GitHub
+      run: |
+        mkdir -p ruleset
+        curl -L "https://raw.githubusercontent.com/xiaolin-007/clash/main/rule/Bahamut.txt" -o ruleset/bahamut.yaml
+        curl -L "https://raw.githubusercontent.com/xiaolin-007/clash/main/rule/YouTube.txt" -o ruleset/YouTube.yaml
+        curl -L "https://raw.githubusercontent.com/xiaolin-007/clash/main/rule/Netflix.txt" -o ruleset/Netflix.yaml
+        curl -L "https://raw.githubusercontent.com/xiaolin-007/clash/main/rule/Spotify.txt" -o ruleset/Spotify.yaml
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add .
+        git commit -m "Update Clash Rules"
+        git push origin main

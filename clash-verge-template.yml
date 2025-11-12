@@ -266,7 +266,7 @@ rules:
   
   # 软件
   - RULE-SET,applications,DIRECT
-  - RULE-SET,proxyapplications,软件
+  - RULE-SET,proxyapplications,软件服务
   
   
   # 需要代理的服务（GFW列表、谷歌服务、非大陆后缀）

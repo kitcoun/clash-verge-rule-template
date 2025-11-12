@@ -142,6 +142,12 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
     path: ./ruleset/applications.yaml
     interval: 86400
+    
+  proxyapplications:
+    type: http
+    behavior: classical
+    url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/proxyapplications.yaml"
+    path: ./ruleset/proxyapplications
 
 # 代理组 (来自 tun.txt 中的 proxy-groups)
 proxy-groups:
@@ -179,7 +185,19 @@ proxy-groups:
     max-failed-times: 3
     hidden: false
     icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/ambulance.svg"
-
+    
+  - name: "软件"
+    type: "select"
+    proxies: ["节点选择", DIRECT]
+    # include-all: true
+    # interval: 300
+    # timeout: 3000
+    url: "https://www.google.com/generate_204"
+    lazy: true
+    max-failed-times: 3
+    hidden: false
+    icon: "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/app_store.svg"
+    
   - name: "谷歌服务"
     type: "select"
     proxies: ["节点选择", DIRECT]
@@ -230,30 +248,35 @@ proxy-groups:
 
 
 rules:  
-  # 2. 拦截规则（广告、恶意域名优先拒绝）
+  # 拦截规则（广告、恶意域名优先拒绝）
   - RULE-SET,reject,REJECT
   
-  # 3. 私有网络/局域网（本地设备、内网服务直连）
+  # 私有网络/局域网（本地设备、内网服务直连）
   - RULE-SET,private,DIRECT
   - RULE-SET,lancidr,DIRECT
   
-  # 4. 大陆IP/直连规则集（国内服务优先直连）
+  # 大陆IP/直连规则集（国内服务优先直连）
   - RULE-SET,cncidr,DIRECT
   - RULE-SET,direct,DIRECT
   
-  # 5. 特定服务规则（苹果、iCloud 按规则集策略）
+  # 特定服务规则（苹果、iCloud 按规则集策略）
   - RULE-SET,apple,苹果服务
   - RULE-SET,icloud,微软服务
   - RULE-SET,microsoft,微软服务
   
-  # 6. 需要代理的服务（GFW列表、谷歌服务、非大陆后缀）
+  # 软件
+  - RULE-SET,applications,DIRECT
+  - RULE-SET,proxyapplications,软件
+  
+  
+  # 需要代理的服务（GFW列表、谷歌服务、非大陆后缀）
   - RULE-SET,gfw,节点选择
   - RULE-SET,google,谷歌服务
   - RULE-SET,telegramcidr,节点选择
   - RULE-SET,tld-not-cn,节点选择
   
-  # 7. 兜底代理规则（未匹配到上述规则的域名走代理）
+  # 兜底代理规则（未匹配到上述规则的域名走代理）
   - RULE-SET,proxy,节点选择
   
-  # 8. 最终兜底（所有未匹配规则走直连，避免误代理）
+  # 最终兜底（所有未匹配规则走直连，避免误代理）
   - MATCH,漏网之鱼

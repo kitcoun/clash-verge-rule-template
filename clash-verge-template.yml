@@ -1,6 +1,6 @@
 mixed-port: 7890
-mode: Rule
 unified-delay: true
+mode: Rule
 allow-lan: true
 external-controller: :9090
 hosts:

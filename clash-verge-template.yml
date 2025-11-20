@@ -145,7 +145,7 @@ rule-providers:
     type: http
     behavior: classical
     url: "https://fastly.jsdelivr.net/gh/kitcoun/clash-verge-rule-template@main/ruleset/proxyapplications.yaml"
-    path: ./ruleset/proxyapplications
+    path: ./ruleset/proxyapplications.yaml
 
 # 代理组 (来自 tun.txt 中的 proxy-groups)
 proxy-groups:
